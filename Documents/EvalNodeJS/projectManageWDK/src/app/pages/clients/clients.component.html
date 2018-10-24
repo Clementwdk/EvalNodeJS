@@ -1,0 +1,25 @@
+<h1><h2>Création d'un Client</h2>
+<form>
+  <div class="form-group">
+    <label for="Nom">Nom</label>
+    <input type="text" class="form-control" id="Nom" placeholder="" [value]="fomrCreate.nom" (change)="formCreate.nom = $event.target.value">
+  </div>
+
+
+   <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="contact">contact</label>
+      <input type="Date" class="form-control" id="contact" placeholder="contact" [value]="fomrCreate.contact" (change)="formCreate.contact = $event.target.value">
+    </div>
+
+  <div class="form-group">
+    <label for="Adresse">Adresse</label>
+    <input type="text" class="form-control" id="Adresse" placeholder=""[value]="fomrCreate.Adresse" (change)="formCreate.Adresse = $event.target.value">
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="Secteur "> Secteur d'activit"</label>
+      <input type="number" step="0.01" class="form-control" id="inputCity" [value]="fomrCreate.Secteur" (change)="formCreate.Secteur = $event.target.value">
+    </div>
+</form>
